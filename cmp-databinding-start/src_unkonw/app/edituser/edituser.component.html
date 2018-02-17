@@ -1,0 +1,28 @@
+<p>
+  edituser works!
+</p>
+<div class = "EditUserform">
+  <h1>Edit User Form </h1>
+  <label for="ID">ID</label>
+  <input type="text" name="id"  [(ngModel)] = "id" value = {{id}}>
+  {{id}}
+  
+  <label for="Firstname">Firstname</label>
+  <input type="text" name="fname" value = {{fname}}>
+  
+  <label for="Lastname">Lastname</label>
+  <input type="text" name="lname" value = {{lname}}>
+  
+  <label for="age">age</label>
+  <input type="text" name="age" value = {{age}}>
+  
+  <label for="email">email</label>
+  <input type="text" name="email" value = {{email}}>
+  
+  <label for="password">password</label>
+  <input type="password" name="password" value = {{password}}>
+  
+  <input type="button" value ="Update" (click)=" Edituser()">
+  </div>
+
+  

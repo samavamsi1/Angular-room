@@ -1,0 +1,47 @@
+<p>
+  home works!
+</p>
+<table class = "table1"border =1  >
+<tr>
+  <th>ID</th>
+  <th>Fname </th>
+  <th> Last Name</th>
+  <th>age</th>
+  <th>Email</th>
+  <th>Password</th>
+  <th>Action</th>
+</tr>
+<tr *ngFor="let user of listuser">
+    <td>{{user.id}}</td>
+    <td>{{user.fname}}</td>
+    <td>{{user.lname}}</td>
+    <td>{{user.age}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.password}}</td>
+    <td> <a [routerLink]="['/Viewcontrol',user.id,user.fname,user.lname,user.age,user.email,user.password]">view</a> </td>
+    <td><a [routerLink]="['/Edituser',user.id,user.fname,user.lname,user.age,user.email,user.password]">Edit</a></td>
+    <!-- <td><input type="button" value = "Edit" (click)="Edituser(user.id)"></td> -->
+    <td><input type="button" value = "Delete" (click)="Deleteuser(user.id)"></td>
+</tr>
+
+</table>
+
+<!-- {{UserInfo | json}}
+<div class = "container" >             
+<label for="UserID">UserID</label>  
+      <input type="text" value= {{user.id}}>
+<label for="First Name">First Name</label>
+      <input type="text"   [(ngModel)]="fname"  value= {{user.fname}}>
+      
+<label for="last Name">last Name</label>
+      <input type="text" value= {{UserInfo.lname}} >
+<label for="age">age</label>
+      <input type="text" value=  {{UserInfo.age}}>
+<label for="email">email</label>
+      <input type="text" value=  {{UserInfo.email}}>
+ <label for="password">Password</label>
+      <input type="text" value=  {{UserInfo.password}}>
+</div>
+
+<input type="button" value ="Create" (click)=" CreateUser()"> -->
+

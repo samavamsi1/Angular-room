@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>YOUME</title>
+  </head>
+  <body>
+    <header>
+      <div id= "navbar-top">
+            <div id = "navbar-inside-top">
+              <ul class ="list-top">
+                <li><a [routerLink]="['']">Home</a>
+                  <a [routerLink]="['/info']">Info</a>   
+                  <a [routerLink]="['/data']">data</a>
+                  <a [routerLink]="['/history']">History</a> 
+                  </li>
+                  
+              </ul>
+            </div>
+      </div>
+    </header>
+    <div class = "Content">
+      <pre>
+        <input type="text" class="form-control" [(ngModel)]="hello">  
+        {{hello}} 
+        <router-outlet></router-outlet>
+      </pre>
+    </div>
+    
+    <!-- <footer class = "bottom">
+             <li>&copy;  Copy rights 2012.
+             </li>
+            
+    </footer> -->
+  </body>
+</html>

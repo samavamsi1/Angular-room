@@ -1,0 +1,9 @@
+.ViewUserform{
+    margin-left: 32%;
+    height:450px;
+    width:500px;
+    background: linear-gradient(red,white);
+    -webkit-box-shadow: -31px -26px 44px 20px rgba(0,0,0,0.53);
+    -moz-box-shadow: -31px -26px 44px 20px rgba(0,0,0,0.53);
+    box-shadow: -31px -26px 44px 20px rgba(0,0,0,0.53);
+}
